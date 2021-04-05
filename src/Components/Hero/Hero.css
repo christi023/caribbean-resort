@@ -1,0 +1,55 @@
+/* Hero */
+.defaultHero,
+.roomsHero {
+  min-height: calc(100vh - 0px);
+  background: url('../../images/heroBg.jpeg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.defaultHero1 {
+  min-height: calc(100vh - 0px);
+  background: url('../../images/heroBg1.jpeg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.defaultHero2 {
+  min-height: calc(100vh - 0px);
+  background: url('../../images/heroBg2.jpeg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.roomsHero {
+  background-image: url('../../images/room-2.jpg');
+  min-height: calc(100vh - 0px);
+}
+
+.singleRoom {
+  background-image: url('../../images/room-3.jpeg');
+  min-height: calc(100vh - 0px);
+}
+
+.roomsError {
+  background-image: url('../../images/error.jpg');
+  min-height: calc(100vh - 0px);
+}
+
+.lost {
+  font-size: 44px;
+  color: yellow;
+  text-align: center;
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
