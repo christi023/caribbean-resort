@@ -1,4 +1,4 @@
-export const navData = [
+const navData = [
   {
     title: 'Home',
     link: '/',
@@ -20,3 +20,5 @@ export const navData = [
     link: '/register',
   },
 ];
+
+export default navData;
