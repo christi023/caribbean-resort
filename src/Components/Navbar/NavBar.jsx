@@ -1,17 +1,18 @@
 import React from 'react';
-import { navData } from '../../data/NavData';
+import navData from '../../data/NavData';
 import { Link } from 'react-router-dom';
 //import { Link, animateScroll as scroll } from 'react-scroll';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import $ from 'jquery';
+
+//import $ from 'jquery';
 
 // styles
 import './Navbar.css';
 
 // for changing navbar  color
-$(window).scroll(function () {
+/*$(window).scroll(function () {
   $('Navbar').toggleClass('scrolled', $(this).scrollTop() > 0);
-});
+}); */
 
 export default function NavBar() {
   /*const scrollToTop = () => {
