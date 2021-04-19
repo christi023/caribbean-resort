@@ -9,7 +9,7 @@ const Services = () => {
   return (
     <>
       <section className="services">
-        <div className="container-fluid services">
+        <div className="container">
           <Title title="Services" />
           <Row>
             {services.map((service, i) => (
