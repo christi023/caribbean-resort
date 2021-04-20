@@ -35,12 +35,12 @@ const services = [
   {
     icon: <FaSpa />,
     title: 'restaurant & spa',
-    info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    info: 'Following strict hygiene protocols, food will be served to your table.',
   },
   {
     icon: <FaRss />,
     title: 'free WIFI',
-    info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    info: 'We provide safe and fast internet connection.',
   },
 ];
 
