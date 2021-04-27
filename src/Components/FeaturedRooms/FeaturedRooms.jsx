@@ -4,6 +4,9 @@ import { getRooms } from '../../actions/roomActions';
 // Components
 import Title from '../Title/Title';
 import Loading from '../Loading/Loading';
+import Room from '../Room/Room';
+// style
+import './FeaturedRooms.css';
 
 const FeaturedRooms = (props) => {
   const [state, setState] = useState({ rooms: [], loading: true });
@@ -23,13 +26,17 @@ const FeaturedRooms = (props) => {
 
   return (
     <>
-      <section className="featured-rooms container" style={{ padding: '5rem 0' }}>
+      <section className="featured-rooms ">
         <Title title="Featured Rooms" />
-        <div className="row">
-          {state.rooms.map((room, i) => (
-            <Loading />
-          ))}
-        </div>
+        {<div>loading... </div> ? (
+          <div className="featured-rooms-center">
+            {state.rooms.map((room, i) => (
+              <Room key={i} room={room} />
+            ))}
+          </div>
+        ) : (
+          <Loading />
+        )}
       </section>
     </>
   );
