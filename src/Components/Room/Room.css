@@ -7,6 +7,7 @@
   -o-transition: 0.4s linear;
   position: relative;
 }
+
 .room:hover {
   box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.5) !important;
 }
@@ -27,28 +28,34 @@
   -ms-transition: 0.4s linear;
   -o-transition: 0.4s linear;
 }
+
 .price-top h6 {
   margin-bottom: 0;
   font-size: 0.9rem;
   font-weight: 300;
   letter-spacing: var(--mainSpacing);
 }
+
 .room-link {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 4em;
+  right: 3.5em;
   opacity: 0;
   transition: all 0.3s linear;
 }
+
 .room:hover {
   background: rgba(0, 0, 0, 0.8);
 }
+
 .room:hover img {
   opacity: 0.3;
 }
+
 .room:hover .price-top {
   opacity: 0;
 }
+
 .room:hover .room-link {
   opacity: 1;
   transform: translate(-90%, -200%) scale(1);
@@ -57,6 +64,7 @@
   -ms-transform: translate(-90%, -200%) scale(1);
   -o-transform: translate(-90%, -200%) scale(1);
 }
+
 .room-info {
   background: #f2f3f4;
   text-transform: capitalize;
