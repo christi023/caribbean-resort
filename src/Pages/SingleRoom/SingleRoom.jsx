@@ -6,7 +6,6 @@ import { Card } from 'react-bootstrap';
 // Component
 import Banner from '../../Components/Banner/Banner';
 import Header from '../../Components/Header/Header';
-//import Hero2 from '../../Components/Hero2/Hero2';
 // actions
 import { getRooms } from '../../actions/roomActions';
 // style
@@ -14,7 +13,6 @@ import './SingleRoom.css';
 
 const SingleRoom = (props) => {
   const [state, setState] = useState({ room: {} });
-
   //console.log(props);
 
   useEffect(() => {
