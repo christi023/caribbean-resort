@@ -23,7 +23,7 @@ export default function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/rooms" component={Rooms} />
-          <Route exact path="/room/:slug" component={SingleRoom} />
+          <Route exact path="/rooms/:slug" component={SingleRoom} />
           <Route exact path="/bookings" component={Bookings} />
           <Route exact path="/contact" component={Contact} />
           <Route component={Error} />
