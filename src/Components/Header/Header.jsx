@@ -1,7 +1,5 @@
 import React from 'react';
 import defaultImg from '../../images/room-3.jpeg';
-//import Banner from '../Banner/Banner';
-
 // style
 import './Header.css';
 

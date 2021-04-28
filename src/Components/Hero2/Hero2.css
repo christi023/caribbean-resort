@@ -24,9 +24,11 @@
   justify-content: center;
   position: relative;
 }
+
 .roomsHero {
   background-image: url('../../images/room-2.jpeg');
   /* min-height: calc(100vh - 0px); */
+
   min-height: 60vh;
 }
 
