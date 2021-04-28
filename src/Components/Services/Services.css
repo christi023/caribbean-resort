@@ -29,6 +29,7 @@
   letter-spacing: var(--mainSpacing);
   font-weight: 1000;
   text-transform: capitalize;
+  color: #000;
 }
 .services p {
   width: 80%;
