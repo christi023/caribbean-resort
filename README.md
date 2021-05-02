@@ -2,6 +2,8 @@
 
 ## Redux
 
+## React Hook Form
+
 ## React Router Dom
 
 ## React Bootstrap
