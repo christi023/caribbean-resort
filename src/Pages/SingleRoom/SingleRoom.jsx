@@ -69,6 +69,46 @@ const SingleRoom = (props) => {
               ),
             )}
         </Row>
+        <div className="single-room-info">
+          <article className="desc">
+            <h3>Details</h3>
+            <p>{room.description ? room.description : null}</p>
+          </article>
+          <article className="info">
+            <h3>Info</h3>
+            <h6>price : ${room.price ? room.price : null}</h6>
+            <h6>size : {room.size ? room.size : null} SQFT</h6>
+            <h6>
+              max capacity :{' '}
+              {room.capacity
+                ? room.capacity > 1
+                  ? `${room.capacity} people`
+                  : room.capacity
+                : null}
+            </h6>
+            <h6>{room.pets ? 'pets allowed' : 'no pets allowed'}</h6>
+            <h6>{room.breakfast ? 'free breakfast included' : null}</h6>
+          </article>
+        </div>
+
+        <div className="room-extras">
+          <h3>Extras</h3>
+          <ul className="extras">
+            {room.extras && room.extras.map((item, i) => <li key={i}> {item}</li>)}
+          </ul>
+          <div className="p-4 clearfix">
+            <Row>
+              <Col md={3} col={12} className="ml-auto">
+                <Link
+                  to={`/booknow/${room.slug}`}
+                  className=" btn btn-outline-primary btn-block btn-lg float-right"
+                >
+                  Book Now
+                </Link>
+              </Col>
+            </Row>
+          </div>
+        </div>
       </section>
     </>
   );

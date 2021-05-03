@@ -56,6 +56,25 @@
   grid-column-gap: 2rem;
   grid-row-gap: 1rem;
 }
+
+.btn-outline-primary {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainBlack);
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--primaryColor) !important;
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-outline-primary:hover {
+  background-color: rgb(250, 220, 175);
+  color: var(--mainBlack);
+}
+
+/************ MEDIA QUERIES ***************************/
 @media screen and (min-width: 992px) {
   .single-room-images,
   .single-room-info,
