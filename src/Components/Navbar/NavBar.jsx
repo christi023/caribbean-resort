@@ -1,6 +1,6 @@
 import React from 'react';
 import navData from '../../data/NavData';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 //import { Link, animateScroll as scroll } from 'react-scroll';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
@@ -23,23 +23,23 @@ export default function NavBar() {
       <Navbar bg="light" variant="dark" expand="lg" collapseOnSelect className="navbar-fixed-top">
         <Container>
           <Navbar.Brand>
-            <Link to="/">
+            <NavLink to="/">
               <span className="navbar-brand font-weight-bolder">Carib Suite</span>
-            </Link>
+            </NavLink>
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
               {navData.map((item, i) => (
-                <Link
+                <NavLink
                   to={item.link}
                   key={i}
                   className="nav-menu-links"
                   activeClassName="active_class"
                 >
                   {item.title}
-                </Link>
+                </NavLink>
               ))}
               <br />
             </Nav>
