@@ -16,7 +16,6 @@ const SingleRoom = (props) => {
   //console.log(props);
 
   useEffect(() => {
-    document.title = 'Beach Resort || Room Details';
     props.getRooms();
     //eslint-disable-next-line
   }, []);
