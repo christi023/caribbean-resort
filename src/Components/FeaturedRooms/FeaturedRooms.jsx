@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import { getRooms } from '../../actions/roomActions';
+import { Row } from 'react-bootstrap';
 // Components
 import Title from '../Title/Title';
 import Loading from '../Loading/Loading';
@@ -26,14 +27,14 @@ const FeaturedRooms = (props) => {
 
   return (
     <>
-      <section className="featured-rooms ">
+      <section className="featured-rooms container ">
         <Title title="Featured Rooms" />
         {<div>loading... </div> ? (
-          <div className="featured-rooms-center">
+          <Row>
             {state.rooms.map((room, i) => (
               <Room key={i} room={room} />
             ))}
-          </div>
+          </Row>
         ) : (
           <Loading />
         )}

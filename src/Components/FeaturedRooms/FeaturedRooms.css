@@ -2,7 +2,7 @@
 .featured-rooms {
   padding: 5rem 0;
 }
-
+/*
 .featured-rooms-center {
   width: 80vw;
   margin: 0 auto;
@@ -11,8 +11,9 @@
   grid-row-gap: 2rem;
   grid-column-gap: 40px;
 }
-
+*/
 /************** Media Queries ************************/
+/*
 @media screen and (min-width: 776px) {
   .featured-rooms-center {
     width: 90vw;
@@ -26,3 +27,4 @@
     max-width: 1170px;
   }
 }
+*/
