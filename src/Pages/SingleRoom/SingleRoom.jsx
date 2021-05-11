@@ -60,7 +60,7 @@ const SingleRoom = (props) => {
           {room.images &&
             room.images.map((img, i) =>
               i === 0 ? null : (
-                <Col md={4} col={12} className="mx-auto">
+                <Col key={i} md={4} col={12} className="mx-auto">
                   <Card className="border-0 shadow-lg">
                     <img key={i} src={img} alt={room.name} className="img-fluid" />
                   </Card>
